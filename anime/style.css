@@ -1,0 +1,229 @@
+@charset "UTF-8";
+.page-other {
+    margin-top: 8.0625rem;
+}
+@media (max-width: 61.99875em) {
+    .page-other {
+        margin-top: 6.125rem;
+    }
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/static/OpenSans') format('truetype');
+}
+* {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    min-width: 320px;
+}
+
+body {
+    color: #241811;
+    line-height: 1;
+    font-family: "Inter", sans-serif;
+    font-size: 0.875rem;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+/*STYLE HEADER*/
+
+.logo__block{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 5rem;
+    background-color: #131129;
+}
+.search{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 456px;
+    height: 56px;
+    background-color: #322B54;
+    border-radius: 20px;
+}
+
+.search__input{
+    width: 400px;
+    height: 56px;
+    background-color: #322B54;
+    border-radius: 20px;
+    color: #FFFFFF;
+    font-size: 22px;
+
+}
+.fa-solid{
+    font-size: 30px;
+
+    color:  rgba(42, 255, 242, 1);
+
+}
+.basket{
+
+    width: 169px;
+    height: 56px;
+    background-color: #322B54;
+    border-radius: 20px;
+
+}
+.registration__button{
+    width: 169px;
+    height: 56px;
+    background-color: #322B54;
+    border-radius: 20px;
+    color:  #FFFFFF;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center
+
+
+}
+
+.nav__block{
+    background-image: url("images/header/fon-header.png");
+    position: relative;
+    width: 100%;
+    height: 699px;
+}
+.watch{
+    font-size: 55px;
+    font-family: Roboto, Arial, sans-serif;
+    background: linear-gradient(180deg, #95ECFF 0%, #AC0B9C 130.4%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.arrow-top {
+
+    width: 25px;
+    height: 25px;
+    color: #95ECFF;
+    transform: rotate(-45deg);
+}
+.episodes{
+    display: flex;
+    justify-content: space-around;
+
+
+}
+.episod{
+    background-image: url("images/header/backgroundEpisod.png");
+    background-repeat: no-repeat;
+    margin-top: 420px;
+    position: relative;
+    z-index: 1000;
+    width:220px ;
+    height: 250px;
+}
+
+
+
+.episod__style{
+    margin: 0 auto;
+    margin-top: 5px;
+    width:210px ;
+    height: 240px;
+    background-repeat: no-repeat;
+
+}
+
+.episod__one{
+    background-image: url("images/header/episodOne.png");
+
+}
+.episod__two{
+    background-image: url("images/header/episodTwo.png");
+}
+.episod__three{
+    background-image: url("images/header/episodThree.png");
+}
+.episod__four{
+    background-image: url("images/header/episodFour.png");
+}
+.episod__five{
+    background-image: url("images/header/episodFive.png");
+}
+
+
+
+.nav_button{
+    margin-top: 118px;
+    display: flex;
+    justify-content: space-around;
+}
+.nav_button a{
+    width:193px ;
+    height: 44px;
+    border-top: 2px solid  rgba(42, 255, 242, 1);
+    border-bottom: 2px solid rgba(178, 80, 212, 0.9);
+    border-left: 2px solid rgba(70, 167, 188, 0.64) ;
+    border-right: 2px solid rgba(38, 127, 147, 0.49) ;
+    border-radius: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Open Sans';
+    text-decoration: none;
+    color:#E4F4F8;
+    font-size:16px;
+    font-weight: 600;
+
+}
+
+.header__botton{
+    position: absolute;
+    top: 695px;
+    width: 100%;
+    height: 199px;
+    background-image: url("images/header/fon-header-botton.png");
+}
+.nav__end{
+    width: 100%;
+    height: 150px;
+    margin-top: 35px;
+    background-color: #0A1428;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.nav__end a {
+    position: relative;
+    text-decoration: none;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+.nav__link:hover{
+    color:rgba(255, 183, 42, 1) ;
+}
+.nav__link::before {
+    content: " ";
+    position: absolute;
+    left: -17px;
+    top: -8px;
+    bottom: -7px;
+    right: 90%;
+    border: 3px solid rgba(42, 255, 242, 1);
+    border-radius: 10px 0 0 10px;
+    border-right: none;
+}
