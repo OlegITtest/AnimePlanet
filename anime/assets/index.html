@@ -1,140 +1,279 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>AnimePlanet</title>
-    <link rel="stylesheet"  href="css/style.css">
-    <link rel="shortcut icon" href="favicon.ico">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-
-
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Anime</title>
 </head>
 <body>
-    <div class="wrapper">
-        <div class="header">
-            <div class="header__container">
-                <div class="logo__block">
-                    <div class="logo">
-                        <img src="images/header/logo.svg">
-                    </div>
-                    <div class="search">
-                        <input class="search__input" type="text" >
-                        <i  class="fa-solid fa-magnifying-glass"></i>
+<div class="wrapper">
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="" class="logo__header">
+                    <img src="images/header/logo.svg" alt="">
+                </a>
+                    <div class="logo__menu">
+                        <div class="search">
+                            <input class="search__input" type="text"  >
+                            <button type="submit" class="search__button"><i  class="fa-solid fa-magnifying-glass"></i></button>
 
-
-                    </div>
-                    <div class="basket">
-                        <button class="registration__button"> <i class="fa-solid fa-bag-shopping"></i>registration</button>
-                    </div>
-                </div>
-                <div class="nav__block" >
-                    <div class="watch">Watch the newest <br> episodes now
-                        <div class="box__arrow">
-                            <div class="arrow arrow-bottom arrow_top"></div>
-                            <div class="arrow arrow-bottom arrow_centr"></div>
-                            <div class="arrow arrow-bottom  arrow_dol"></div>
+                        </div>
+                        <div class="basket">
+                            <button class="registration__button"> <i class="fa-solid fa-bag-shopping"></i>registration</button>
                         </div>
                     </div>
 
+            </div>
 
-                    <div class="episodes">
-                        <div class="episod">
-                            <div class="episod__one episod__style"></div>
-                        </div>
-                        <div class="episod">
-                            <div class="episod__two episod__style"></div>
-                        </div>
-                        <div class="episod">
-                            <div class="episod__three episod__style"></div>
-                        </div>
-                        <div class="episod">
-                            <div class="episod__four episod__style"></div>
-                        </div>
-                        <div class="episod">
-                            <div class="episod__five episod__style"></div>
-                        </div>
+            <div class="header__nav">
+                <div class="new__episod">Watch the newest <br>  episodes now</div>
+                <div class="header__nav_bg-bot">
+                    <div class="header__nav__menu">
 
-                    </div>
-                    <div class="header__botton">
-                        <div class="nav_button">
-                            <a href="#">Chainsaw man</a>
-                            <a href="#">Blue Lock</a>
-                            <a href="#">Chainsaw Man</a>
-                            <a href="#">Batlle master</a>
-                            <a href="#">Full Metal Alchemist</a>
+                        <div class="header__nav__menu__btn">
+                            <div class="arrow-down">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="header__nav__menu__img__fon">
+                                <img src="images/header/backgroundEpisod.png" alt="">
+                                <div class="header__nav__menu__img">
+                                    <img src="images/header/episodOne.png" alt="">
+                                </div>
+                            </div>
+                            <button class="header__nav__menu__butt" >Chainsaw man</button>
                         </div>
-                        <div class="nav__end">
-                            <a class="nav__link"  href="#">ARE WATCHING NOW</a>
-                            <a class="nav__link"  href="#">ALL ANIME</a>
-                            <a class="nav__link"  href="#">MY BOOKMARKS</a>
+                        <div class="header__nav__menu__btn">
+                            <div class="arrow-down">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="header__nav__menu__img__fon">
+                                <img src="images/header/backgroundEpisod.png" alt="">
+                                <div class="header__nav__menu__img">
+                                    <img src="images/header/episodTwo.png" alt="">
+                                </div>
+                            </div>
+                            <button class="header__nav__menu__butt" >Chainsaw man</button>
+                        </div>
+                        <div class="header__nav__menu__btn">
+                            <div class="arrow-down">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                            <div class="header__nav__menu__img__fon">
+                                <img src="images/header/backgroundEpisod.png" alt="">
+                                <div class="header__nav__menu__img">
+                                    <img src="images/header/episodThree.png" alt="">
+                                </div>
+                            </div>
+                            <button class="header__nav__menu__butt" >Chainsaw man</button>
+                        </div>
+                        <div class="header__nav__menu__btn">
+                            <div class="arrow-down">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="header__nav__menu__img__fon">
+                                <img src="images/header/backgroundEpisod.png" alt="">
+                                <div class="header__nav__menu__img">
+                                    <img src="images/header/episodFour.png" alt="">
+                                </div>
+                            </div>
+                            <button class="header__nav__menu__butt" >Chainsaw man</button>
+                        </div>
+                        <div class="header__nav__menu__btn">
+                            <div class="arrow-down">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="header__nav__menu__img__fon">
+                                <img src="images/header/backgroundEpisod.png" alt="">
+                                <div class="header__nav__menu__img">
+                                    <img src="images/header/episodFive.png" alt="">
+                                </div>
+                            </div>
+                            <button class="header__nav__menu__butt" >Chainsaw man</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="header__last__menu">
+                <div class="header__last__menu__left">
+                    <a class="header__last__menu__link alinkstyle__before"  href="">ARE WATCHING NOW</a>
+                    <a class="header__last__menu__link alinkstyle__before" href="">ALL ANIME</a>
+                </div>
+                <div class="header__last__menu__right">
+                    <a class="header__last__menu__link alinkstyle__before " href="">MY BOOKMARKS</a>
+                </div>
+        </div>
+    </header>
 
-        <div class="sort__list">
-            <div class="sort__container">
-                <div class="sort__menu">
-                    <div class="sort__menu__item sort__menu__item__01">
-                        <a class="sort__menu__link sort__menu__link__01" href="">
-                            GENRE
-                        </a>
-                        <div class="sort__menu__body sort__menu__body__01">
-                            <div class="sort__menu__content"></div>
-                        </div>
+    <div class="main">
+        <div class="container">
+            <div class="section">
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__list-item">
+                            <a class="menu__list-btn" href="#">GENRE
+                                <span>+</span>
+                            </a>
+                            <a class="menu__list-btn" href="#">BY YEARS
+                                <span>+</span> </a>
+                            <a class="menu__list-btn" href="#">EXCLUDE
+                                <span>+</span></a>
+                            <a class="menu__list-btn" href="#">SORTING
+                                <span>+</span>
+                            </a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-btn" href="">1</a>
+                            <a class="menu__list-btn" href="">2</a>
+                            <a class="menu__list-btn" href="">3</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="sort__result">
+                <div class="sort__result-list">
+
+                    <div class="sort__result-content">
+                            <div class="sort__result-ramka">
+                                <img class="sort__result-anime" src="images/sort/Rectangle%20100.png" alt="">
+                            </div>
+                            <div class="sort__result-ramka">
+                                <img class="sort__result-anime" src="images/sort/Rectangle%20100.png" alt="">
+                            </div>
+                            <div class="sort__result-ramka">
+                                <img class="sort__result-anime" src="images/sort/Rectangle%20100.png" alt="">
+                            </div>
+                            <div class="sort__result-ramka">
+                                <img class="sort__result-anime" src="images/sort/Rectangle%20100.png" alt="">
+                            </div>
+                            <div class="sort__result-ramka">
+                                <img class="sort__result-anime" src="images/sort/Rectangle%20100.png" alt="">
+                            </div>
+                            <div class="sort__result-ramka">
+                                <img class="sort__result-anime" src="images/sort/Rectangle%20100.png" alt="">
+                            </div>
+                            <div class="sort__result-ramka">
+                                <img class="sort__result-anime" src="images/sort/Rectangle%20100.png" alt="">
+                            </div>
                     </div>
 
-                    <div class="sort__menu__item sort__menu__item__02">
-                        <a class="sort__menu__link sort__menu__link__02" href="">
-                            BY YEARS
-                        </a>
-                        <div class="sort__menu__body sort__menu__body__02">
-                            <div class="sort__menu__content"></div>
-                        </div>
-                    </div>
-
-                    <div class="sort__menu__item sort__menu__item__03">
-                        <a class="sort__menu__link sort__menu__link__03" href="">
-                            EXCLUDE
-                        </a>
-                        <div class="sort__menu__body sort__menu__body__03">
-                            <div class="sort__menu__content"></div>
-                        </div>
-                    </div>
-
-                    <div class="sort__menu__item sort__menu__item__04">
-                        <a class="sort__menu__link sort__menu__link__04" href="">
-                            SORTING
-                        </a>
-                        <div class="sort__menu__body sort__menu__body__04">
-                            <div class="sort__menu__content"></div>
-                        </div>
-                    </div>
-                    <div class="icons__sort">
-                        <div>1</div>
-                        <div>2</div>
-                        <div>3</div>
-                    </div>
 
                 </div>
 
+                    <div class="menu__filter__coments">
+                            <div class="anime__files__menu__selected">
+                                <a class="nav__link__menu"  href="#">NOVELTIES</a>
+                                <a class="nav__link__menu"  href="#">ANIME BY GERNE</a>
+                                <a class="nav__link__menu"  href="#">ON YEARS</a>
+                                <a class="nav__link__menu"  href="#">SELECTIONS</a>
+                                <a class="nav__link__menu"  href="#">TOP 100 ANIME</a>
+                                <span class="nav__link__menu__line"></span>
+                                <a class="nav__link__menu"  href="#">VIDEO REVIEWS</a>
+                                <a class="nav__link__menu"  href="#">ALL HEROES</a>
+                                <a class="nav__link__menu"  href="#">ANIME MAIL</a>
+                            </div>
 
+                        <div class="menu__coments">
+                            <div class="coments__buton">
+                                <a class="nav__link__menu"  href="#">COMMENTS</a>
+                                <div>Перемикач</div>
+
+                            </div>
+                            <div class="coment__area">
+                                <div class="coment__area__header">
+                                    <img src="./images/coments/Rectangle%20129.png" alt="Ім'я автора">
+                                    <div class="coment__area__info">
+                                        <h3>Ім'я автора</h3>
+                                        <p>18.11.22</p>
+                                    </div>
+                                </div>
+                                <div class="coment__area__text">
+                                    <p>The third series is currently the most epic cut in the whole title
+                                        I'm waiting for the continuation and I hope that it will be at least no worse ^^</p>
+                                </div>
+                                <a class="nav__link__coment" href="">The throne marked by god</a>
+                            </div>
+                            <div class="coment__area">
+                                <div class="coment__area__header">
+                                    <img src="./images/coments/Rectangle%20129.png" alt="Ім'я автора">
+                                    <div class="coment__area__info">
+                                        <h3>Ім'я автора</h3>
+                                        <p>18.11.22</p>
+                                    </div>
+                                </div>
+                                <div class="coment__area__text">
+                                    <p>The third series is currently the most epic cut in the whole title
+                                        I'm waiting  for the continuation and I hope that it will be at least no worse ^^</p>
+                                </div>
+                                <a class="nav__link__coment"  href="">Ideal World</a>
+                            </div>
+                            <div class="coment__area">
+                                <div class="coment__area__header">
+                                    <img src="./images/coments/Rectangle%20129.png" alt="Ім'я автора">
+                                    <div class="coment__area__info">
+                                        <h3>Ім'я автора</h3>
+                                        <p>18.11.22</p>
+                                    </div>
+                                </div>
+                                <div class="coment__area__text">
+                                    <p>The third series is currently the most epic cut in the whole title
+                                        I'm waiting for the continuation and I hope that it will be at least no worse ^^</p>
+                                </div>
+                                <a class="nav__link__coment"  href="">The throne marked by god</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
+        <div class="container">
+            <section>
+                <div class="new__films">
 
+                </div>
+            </section>
         </div>
+
     </div>
+    <footer>
+        <div class="container__footer">
+            <div class="footer__left">
+                <img class="footer__logo" src="images/header/logo.svg" alt="">
+                <p class="footer__left-text">Anime star planet</p>
+            </div>
+            <div class="footer__right">
+                <a class="" href="">ALL ANIME</a>
+                <a class="" href="">AGREEMENT</a>
+                <a class="" href="">RIGHT HOLDERS</a>
+            </div>
+        </div>
+    </footer>
+
+</div>
 
 
 
 
-</body>
 <script src="https://kit.fontawesome.com/523372efa1.js" crossorigin="anonymous"></script>
 <script src="js/script.js"></script>
+</body>
 </html>

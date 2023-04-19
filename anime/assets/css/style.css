@@ -1,307 +1,444 @@
-@charset "UTF-8";
-.page-other {
-    margin-top: 8.0625rem;
-}
-@media (max-width: 61.99875em) {
-    .page-other {
-        margin-top: 6.125rem;
-    }
-}
-
-* {
-    padding: 0px;
-    margin: 0px;
-    border: 0px;
-}
-
-*,
-*:before,
-*:after {
+html{
     box-sizing: border-box;
 }
-
+*, *:after, *:before{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
 html,
-body {
+body{
     height: 100%;
-    min-width: 320px;
 }
-:root {
-    --primary-color: #2AFFF2; /* Змінна з основним кольором */
+ul{
+    list-style: none;
 }
-
-
-body {
-    color: var(--primary-color);
-
-    line-height: 1;
-
-    font-size: 0.875rem;
-    -ms-text-size-adjust: 100%;
-    -moz-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+a{
+    text-decoration: none;
+    color: inherit;
 }
-/*STYLE HEADER*/
+ /*Обнулення стилів*/
 
-.logo__block{
+/*Хеадер*/
+.wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    margin: 0 auto;
+    padding: 0px 0px;
+}
+.header{
+    background-color: #131129;
+
+}
+.logo__header{
+    padding: 10px 30px;
+}
+.header__inner{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    gap: 400px;
+}
+.logo__menu{
     width: 100%;
-    height: 5rem;
-    background-color: #131129;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.fa-solid{
+    font-size: 25px;
+    color: #2AFFF2;
+    background:#322B54 ;
+}
+.fa-magnifying-glass{
+    margin-right: 15px;
+}
+.fa-bag-shopping{
+    margin: 0px 10px;
 }
 .search{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    background: #322B54;
     width: 456px;
     height: 56px;
-    background-color: #322B54;
     border-radius: 20px;
+    justify-content: flex-end;
+    align-items: center;
 }
-
-.search__input{
-    width: 400px;
-    height: 56px;
-    background-color: #322B54;
+.search input{
+    outline: none;
+    border: none;
+    background: #322B54;
     border-radius: 20px;
+    width: 100%;
+    height: 100%;
     color: #FFFFFF;
-    font-size: 22px;
-
+    font-size: 16px;
 }
-.search__input:focus {
-    outline: none; /* Вимикаємо стандартну рамку вибору */
-}
-
-.fa-solid{
-    font-size: 30px;
-
-    color:  rgba(42, 255, 242, 1);
-
+.search__button{
+    border: none;
+    outline: none;
+    background-color:#322B54 ;
 }
 .basket{
-
-    width: 169px;
+    display: flex;
+    align-items: center;
+    width:150px ;
     height: 56px;
-    background-color: #322B54;
     border-radius: 20px;
-
+    background:#322B54 ;
+    margin-right: 50px;
 }
 .registration__button{
-    width: 169px;
-    height: 56px;
-    background-color: #322B54;
-    border-radius: 20px;
-    color:  #FFFFFF;
-    font-size: 20px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center
+    border: none;
+    outline: none;
+    background:#322B54 ;
+    color: #FFFFFF;
+    font-size: 16px;
 }
 
-.nav__block{
-    background-image: url("../images/header/fon-header.png");
-    position: relative;
-    width: 100%;
-    height: 699px;
-}
-.watch{
+.new__episod{
+    font-family: 'Open Sans';
+    font-weight: 600;
     font-size: 55px;
-    position: absolute;
-    margin: 8rem;
-    font-family: Roboto, Arial, sans-serif;
-    background: linear-gradient(180deg, #95ECFF 0%, #AC0B9C 130.4%);
+    /*position: relative;*/
+    /*max-width: 100%;*/
+    top: 50px;
+    left: 150px;
+
+
+    background-image: linear-gradient(180deg, #95ECFF 0%, #AC0B9C 130.4%);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.box__arrow{
-    display: flex;
+    background-clip: text;
+    color: transparent;
 
-    flex-direction: column;
-}
-.arrow {
-
-
-    width: 38px;
-    height: 38px;
-    border-top: 3px solid  #22D7FF;
-    border-right: 3px solid  #22D7FF;
-    border-radius: 5px;
 
 }
-.arrow_top{
-    width: 2rem;
-    height: 2rem;
-}
-.arrow_centr{
-    width: 3rem;
-    height: 3rem;
-
-}
-.arrow_dol{
-    width: 4rem;
-    height: 4rem;
-
-}
-.arrow-bottom {
-    transform: rotate(135deg);
-}
-
-
-.episodes{
-    display: flex;
-    justify-content: space-around;
-
-}
-.episod{
-    background-image: url("../images/header/backgroundEpisod.png");
+.header__nav{
+    background-image: url("../images/header/fon-header.png");
     background-repeat: no-repeat;
-    margin-top: 34rem;
-
-    z-index: 1000;
-    width:220px ;
-    height: 250px;
-}
-.episod__style{
-    margin: 0 auto;
-    margin-top: 5px;
-    width:210px ;
-    height: 240px;
-    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
 
 }
-
-
-.episod__one{
-    background-image: url("../images/header/episodOne.png");
+.header__nav_bg{
+    width: 100%;
 
 }
-.episod__two{
-    background-image: url("../images/header/episodTwo.png");
+.header__nav_bg-bot{
+    width: 100%;
+    height: 200px;
+    position: relative;
+    z-index: 80;
+    background: rgba(39, 62, 84, 0.86);
+    border-radius: 10px;
+    opacity: 0.9;
+    top:400px;
 }
-.episod__three{
-    background-image: url("../images/header/episodThree.png");
-}
-.episod__four{
-    background-image: url("../images/header/episodFour.png");
-}
-.episod__five{
-    background-image: url("../images/header/episodFive.png");
-}
-
-
-
-.nav_button{
-    margin-top: 118px;
+.header__nav__menu{
     display: flex;
-    justify-content: space-around;
+    position: absolute;
+    left: 2.5%;
+    z-index: 100;
+    bottom: 3%;
 }
-.nav_button a{
-    width:193px ;
-    height: 44px;
+.header__nav__menu__img__fon{
+    position: relative;
+    padding-bottom: 5%;
+}
+.header__nav__menu__img{
+    position: absolute;
+    z-index: 9;
+    top: 2%;
+    left: 2%;
+}
+.header__nav__menu__btn{
+    padding: 10px 10px;
+    text-align: center;
+    margin-left: 3%;
+}
+/*ANIMATION*/
+.arrow-down {
+    display: none;
+    margin-left: 50%;
+    margin-top: 50px;
+}
+.arrow-down span {
+    position: relative;
+    top: 15%;
+    z-index: 324;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 5px solid #337AB7;
+    border-right: 5px solid #337AB7;
+    transform: rotate(45deg);
+    margin: -16px;
+    animation: arrow-down 2s infinite;
+}
+.arrow-down span:nth-child(2){
+    animation-delay: -0.2s;
+}
+.arrow-down span:nth-child(3){
+    animation-delay: -0.4s;
+}
+@keyframes arrow-down {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
+}
+
+.header__nav__menu__btn:hover .arrow-down {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header__nav__menu__butt{
+    font-family: Open Sans;
+    font-weight: 600;
+    color: #FFFFFF;
+    padding: 10px;
     background: linear-gradient(180deg, rgba(70, 167, 188, 0.64) 0%, rgba(38, 127, 147, 0.49) 100%);
     border-top: 2px solid  rgba(42, 255, 242, 1);
     border-bottom: 2px solid rgba(178, 80, 212, 0.9);
     border-left: 2px solid rgba(70, 167, 188, 0.64) ;
     border-right: 2px solid rgba(38, 127, 147, 0.49) ;
-    border-radius: 100px;
+    border-radius: 20px;
 
+}
+.header__last__menu{
+    display: flex;
+    background: #0A1428;
+    text-align: center;
+    width: 100%;
+
+}
+.header__last__menu__link{
     display: flex;
     align-items: center;
-    justify-content: center;
-
-    font-family: 'Open Sans';
-    text-decoration: none;
-    color:#E4F4F8;
-    font-size:16px;
-    font-weight: 600;
-
-}
-
-.header__botton{
-    position: absolute;
-    top: 695px;
-    width: 100%;
-    height: 199px;
-    background-image: url("../images/header/fon-header-botton.png");
-}
-.nav__end{
-    width: 100%;
-    height: 150px;
-    margin-top: 35px;
-    background-color: #0A1428;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-}
-
-.nav__end a {
     position: relative;
-    text-decoration: none;
-    font-family: Inter;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 24px;
-    color: #FFFFFF;
+    text-align: center;
+    color: #fff;
+    height: 10rem;
 }
-.nav__link:hover{
-    color:rgba(255, 183, 42, 1) ;
-}
-.nav__link::before {
+.alinkstyle__before:before{
     content: " ";
     position: absolute;
-    left: -17px;
-    top: -8px;
-    bottom: -7px;
-    right: 90%;
+    left: -14px;
+    top: 65px;
+    bottom: 63px;
+    right: 85%;
     border: 3px solid rgba(42, 255, 242, 1);
     border-radius: 10px 0 0 10px;
     border-right: none;
 }
-/*end header*/
-.sort__list{
-    margin-top: 343px;
-    background: #020711 ;
 
-}
-.sort__menu{
+
+
+.header__last__menu__left{
     display: flex;
+    left: 5%;
 }
-.sort__menu__item {
-    margin: 25px;
+.header__last__menu__left a {
+        padding-right: 25px;
+}
+
+.header__last__menu__right{
+    position: relative;
+    left: 60%;
+}
+
+
+
+/*Хеадер*/
+
+
+/*MAIN*/
+
+.main{
+    position: relative;
+    z-index: 50;
+    background: #020711;
+}
+.menu__list{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width:185px ;
-    height: 44px;
+    justify-content: space-between;
+    padding: 3%;
+}
+.menu__list-item{
+    display: flex;
+    padding: 0% 4%;
+}
+.menu__list-item a {
+    text-align: center;
+    padding: 10px ;
+    margin-left: 5rem;
+}
+.menu__list-btn{
     background: linear-gradient(180deg, #6E75B5 0%, #3DC9E8 100%);
+}
+.menu__list-item a {
     border-radius: 20px;
-
 }
-.sort__menu__item:hover{
-    
-    background: linear-gradient(180deg, #B891F7 0%, #1D71EF 100%);
-    color: #FFB72A;
+.sort__result-list{
 
+    max-width: 70%;
 }
-.sort__menu__link{
-    color:#072231 ;
-    font-size: 20px;
-    font-weight: 600;
-    font-family: "Open Sans";
-    text-decoration: none;
-
-}
-
-
-.icons__sort{
-    margin: 25px;
+.sort__result{
     display: flex;
+    justify-content: space-around;
+    overflow-y: scroll;
+
+    height: 800px;
 }
-.icons__sort div {
-    width: 80px;
-    height: 80px;
+/* ширина і кольори полоси прокрутки */
+.sort__result::-webkit-scrollbar {
+    width: 26px; /* ширина полоси прокрутки */
+    border-radius: 10px;
 }
+
+/* фон трека прокрутки */
+.sort__result::-webkit-scrollbar-track {
+    background: #C4F8FF;
+    border-radius: 10px;
+}
+
+
+/* колір скролу */
+.sort__result::-webkit-scrollbar-thumb {
+    width: 22px;
+    background: #202A45;
+    border-radius: 10px;
+}
+
+/* колір скролу при наведенні */
+.sort__result::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.sort__result-content{
+   display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+
+}
+.sort__result-ramka{
+    width:320px ;
+    height:420px ;
+
+    display: flex;
+    align-items: center;
+
+    border: 1px solid #2AFFF2;
+    border-radius: 20px;
+}
+.sort__result-anime{
+    margin: 0 auto;
+}
+.menu__filter__coments{
+    color: #FFFFFF;
+    width: 20%;
+}
+.coment__area__text{
+    background: linear-gradient(0deg, #4E3368, #4E3368),
+    linear-gradient(180deg, #83B5DA 0%, rgba(0, 79, 137, 0.86) 100%);
+}
+.anime__files__menu__selected{
+    background: #202A45;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid  rgba(0, 79, 137, 0.86)   ;
+    border-radius: 20px;
+}
+.nav__link__menu__line{
+    width: 90%;
+    height: 1px;
+    background: #D9D9D9;
+    margin-left: 5%;
+}
+.anime__files__menu__selected{
+    font-size: 20px;
+}
+.anime__files__menu__selected a{
+    padding: 5%;
+}
+.menu__coments{
+    font-size: 20px;
+    padding: 5%;
+    background: #202A45;
+    border: 2px solid  rgba(0, 79, 137, 0.86);
+    border-radius: 20px;
+}
+/*NEW FILMS*/
+.new__films{
+    width: 100%;
+    height: 597px;
+    background: linear-gradient(180deg, rgba(11, 26, 33, 0.58) 0%, rgba(24, 61, 117, 0.58) 100%);
+    border-radius: 10px;
+    margin-top: 25px;
+}
+
+
+
+
+
+
+
+
+/*FOOTER*/
+
+.container__footer{
+    display: flex;
+    height: 10%;
+    width: 100%;
+    background-color: #0A1428;
+}
+.footer__logo{
+    padding: 2% 1% 1% 2%;
+}
+.footer__left{
+    padding-left: 5%;
+    color: #C4F8FF;
+}
+.footer__left-text{
+    padding: 0% 1% 1% 5%;
+}
+.footer__right{
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    position: relative;
+    left: 50%;
+}
+.footer__right a {
+    padding: 25px;
+}
+
+
+
+
+
+
+
+
