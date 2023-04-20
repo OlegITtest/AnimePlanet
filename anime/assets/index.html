@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/style.css">
     <title>Anime</title>
 </head>
@@ -129,21 +130,25 @@
                 <nav class="menu">
                     <ul class="menu__list">
                         <li class="menu__list-item">
-                            <a class="menu__list-btn" href="#">GENRE
-                                <span>+</span>
+                            <a class="menu__list-btn menu__list__btn-genre" href="#">GENRE
+                                <span></span>
                             </a>
-                            <a class="menu__list-btn" href="#">BY YEARS
-                                <span>+</span> </a>
-                            <a class="menu__list-btn" href="#">EXCLUDE
-                                <span>+</span></a>
-                            <a class="menu__list-btn" href="#">SORTING
-                                <span>+</span>
+                            <a class="menu__list-btn menu__list__btn-genre" href="#">BY YEARS
+                                <span></span> </a>
+                            <a class="menu__list-btn menu__list__btn-genre" href="#">EXCLUDE
+                                <span></span></a>
+                            <a class="menu__list-btn menu__list__btn-genre" href="#">SORTING
+                                <span></span>
                             </a>
                         </li>
                         <li class="menu__list-item">
-                            <a class="menu__list-btn" href="">1</a>
-                            <a class="menu__list-btn" href="">2</a>
-                            <a class="menu__list-btn" href="">3</a>
+                            <a class="menu__list-btn menu__list__btn-teleg" href=""><i class="fa-brands fa-telegram"></i></a>
+                            <a class="menu__list-btn" href=""> <i class="fa-brands fa-youtube"></i></a>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider__them-btn"></span>
+                            </label>
+
                         </li>
                     </ul>
                 </nav>
@@ -248,7 +253,53 @@
         <div class="container">
             <section>
                 <div class="new__films">
+                    <div class="new__films-img">
+                        <img src="images/main/Group.png" alt="">
+                    </div>
+                    <div class="new__films-txt">
+                        <p>ALL NEW FILMS <br> THIS YEAR</p>
+                        <button>WATCH</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="container">
+            <section>
+                <div class="slider__anime">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="images/slider/1.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <h2>Anime 1</h2>
+                                <img src="images/slider/Rectangle%20139.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/slider/Rectangle%20138.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/slider/Rectangle%20132.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/slider/Rectangle%20187.png" />
+                            </div>
 
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="container">
+            <section>
+                <div class="watsh__online-box">
+                    <div class="watsh__online">
+                        <h2>Watch anime online in HD quality</h2>
+                        <p class="watsh__online-text">Anime Planet offers you to watch your favorite anime in high quality, add it to your bookmarks and it will remember for you which series you stopped at. By going to the main page, you can continue watching from the very episode where you left off.</p>
+                        <p class="watsh__online-age">The site may contain materials 18+</p>
+                    </div>
                 </div>
             </section>
         </div>
@@ -272,6 +323,7 @@
 
 
 
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
 <script src="https://kit.fontawesome.com/523372efa1.js" crossorigin="anonymous"></script>
 <script src="js/script.js"></script>
